@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Styled Lists - Halfmoon</title>
+    <link href="../css/halfmoon-variables.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+</head>
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true"  data-set-preferred-theme-onload="true">
+<div class="page-wrapper with-navbar">
+    <nav class="navbar">
+        <div class="navbar-content">
+            <button class="btn btn-action" type="button" onclick="halfmoon.toggleDarkMode()" aria-label="Toggle dark mode">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="content-wrapper">
+        <!-- Credit: Tahmid/Halfmoon  -->
+        <div class="content w-600 mw-full mx-auto position-relative">
+            <div class="card w-450 mw-full mx-auto position-relative">
+                <button type="button" class="btn btn-square position-absolute top-0 right-0 m-10" onclick="halfmoon.toggleDarkMode()">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    <span class="sr-only">Toggle dark mode</span>
+                </button>
+                <h1 class="card-title font-size-24">
+                    Styled lists
+                </h1>
+                <p class="text-muted">
+                    Styled unordered and ordered lists that look good in both light and dark modes.
+                </p>
+                <h2 class="card-title">
+                    Unordered list
+                </h2>
+                <p class="text-muted">
+                    Simple bullet-point list that has no particular order.
+                </p>
+                <ul class="unordered-list">
+                    <li>Unordered item 1</li>
+                    <li>Unordered item 2</li>
+                    <li>Unordered item 3</li>
+                </ul>
+                <br />
+                <h2 class="card-title">
+                    Ordered list
+                </h2>
+                <p class="text-muted">
+                    List with ordered numbering.
+                </p>
+                <ol class="ordered-list">
+                    <li>Ordered item 1</li>
+                    <li>Ordered item 2</li>
+                    <li>Ordered item 3</li>
+                </ol>
+                <br />
+                <h2 class="card-title">
+                    Nesting and text wrapping
+                </h2>
+                <p class="text-muted">
+                    Lists can be nested within one another, and if the text wraps to a new line, the padding for the bullet/numbering will still apply to the new line.
+                </p>
+                <ul class="unordered-list">
+                    <li>
+                        The weather forecast didn't say that, but the steel plate in his hip did.
+                        <ol class="ordered-list">
+                            <li>
+                                He had learned over the years to trust his hip over the weatherman.
+                            </li>
+                            <li>
+                                It was going to rain, so he better get outside and prepare.
+                                <ul class="unordered-list">
+                                    <li>
+                                        Sleeping in his car was never the plan but sometimes things don't work out as planned.
+                                    </li>
+                                    <li>
+                                        This had been his life for the last three months and he was just beginning to get used to it.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        He didn't actually enjoy it, but he had accepted it and come to terms with it. Or at least he thought he had.
+                    </li>
+                    <li>
+                        All that changed when he put the key into the ignition, turned it and the engine didn't make a sound.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/halfmoon.js"></script>
+</body>
+</html>

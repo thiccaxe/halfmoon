@@ -2,9 +2,19 @@
 
 > This is the development branch for the Halfmoon framework, which contains the latest changes and updates. For the last stable release, see the [main branch](https://github.com/halfmoonui/halfmoon/) of the repo.
 
-The only files that will be worked on are `halfmoon-variables.css` and `halfmoon.js`. Once they are ready for a new release, the other files will be generated (i.e. minified and variables flattened), and then this branch will be merged with the main one. Not everything listed below will be worked on for the **next** major update (`v1.2.0`). Anything left out will be pushed to the update after that one.
+The only files that will be worked on are `halfmoon-variables.css` and `halfmoon.js`.
+Once they are ready for a new release, the other files will be generated (i.e. minified and variables flattened),
+and then this branch will be merged with the main one.
+Not everything listed below will be worked on for the **next** major update (`v1.2.0`).
+Anything left out will be pushed to the update after that one.
 
-**Please note**, writing and updating the official documentation website requires time and polish. So for the time being, as new components and features are being added, I will create examples illustrating how they can be used on Codepen. That should hopefully tie everything over until the official release and documentation update. You can find the links to the Codepens below, next to the list items.
+**Please note**, writing and updating the official documentation website requires time and polish.
+So for the time being, as new components and features are being added,
+I will create examples illustrating how they can be used on Codepen. 
+That should hopefully tie everything over until the official release and documentation update.
+You can find the links to the Codepens below, next to the list items.
+Alternatively, select examples may be found under the `examples` directory.
+
 
 **UPDATE 3rd March, 2021** Dropdown transitions updated along with code clean up, tooltips design and transitions updated along with code clean up, transition utilities added, focus visible state now supported for all types of links, sidebar animation improved, and other small changes.
 
@@ -51,7 +61,7 @@ The above list is missing a few other tiny bugs and issues that will be fixed.
 
 ## Updates to the documentation
 
-- [ ] Pages for the new components and features
+- [ ] **Pages for the new components and features** (SEE EXAMPLES DIRECTORY!)
 - [ ] Accessibility improvements in the examples
 - [ ] Comparison pages with other popular frameworks
 - [ ] Pages for helping users integrate Halfmoon with React, Angular, Vue, and so on (as of right now, the documentation is sparse in this regard)
