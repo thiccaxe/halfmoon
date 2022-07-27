@@ -359,12 +359,17 @@ function halfmoonOnDOMContentLoaded() {
     // Or on larger screens when sidebar type is overlayed-all
     if (document.documentElement.clientWidth <= 768) {
         if (halfmoon.pageWrapper) {
-            if (!halfmoon.pageWrapper.getAttribute("data-show-sidebar-onload-sm-and-down")) {
+            var attr = halfmoon.pageWrapper.getAttribute("data-sidebar-onload-sm-and-down");
+            if (!attr || attr !== "show") { // || attr == "hide"
                 halfmoon.pageWrapper.setAttribute("data-sidebar-hidden", "hidden");
+            } else {
+                halfmoon.pageWrapper.removeAttribute("data-sidebar-hidden");
             }
+            halfmoon.pageWrapper.removeAttribute("data-sidebar-onload-sm-and-down"); 
         }
     } else {
         if (halfmoon.pageWrapper) {
+            halfmoon.pageWrapper.removeAttribute("data-sidebar-onload-sm-and-down");
             if (halfmoon.pageWrapper.getAttribute("data-sidebar-type") === "overlayed-all") {
                 halfmoon.pageWrapper.setAttribute("data-sidebar-hidden", "hidden");
             }

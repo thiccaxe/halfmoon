@@ -3869,6 +3869,26 @@ body {
     left: 0;
 }
 
+@media (max-width: 769px) {    
+    /* Hide sidebar on load for sm and down */
+    .page-wrapper.with-sidebar[data-sidebar-onload-sm-and-down~="hide"] > .sidebar {
+        visibility: hidden;
+        left: calc((-1) * var(--sidebar-width));   
+    }
+
+    .page-wrapper.with-sidebar[data-sidebar-onload-sm-and-down~="hide"] > .sidebar-overlay {
+        display: none;
+    }
+
+
+    .page-wrapper.with-sidebar[data-sidebar-onload-sm-and-down~="hide"] > .content-wrapper {
+        width: 100%;
+        left: 0;
+    }
+
+}
+
+
 /* With navbar fixed to bottom */
 
 .page-wrapper.with-navbar-fixed-bottom > .content-wrapper,
